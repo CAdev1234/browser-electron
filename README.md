@@ -3,7 +3,6 @@
 
   <blockquote>Minimal Browser built with Typescript, React, Electron, Webpack 5 and Babel 7</blockquote>
 </div>
-<br />
 
 ## 📦 Libraries
 
@@ -12,7 +11,6 @@
 - Webpack 5
 - Babel 7
 - Hot reloading (`npm start`)
-<br />
 
 ## ⚙️ Getting Started
 
@@ -28,8 +26,6 @@ npm install
 ```
 npm run Start
 ```
-
-> ⚠️ Note: This boilerplate uses `nodeIntegration` by default, which allows your renderer code to access node. Only use this boilerplate if you are running trusted code in your app. Alternatively, you can change this setting in `src/main/index.ts` and adjust accordingly.
 
 ## 💎 Features
 ### UI Elements
