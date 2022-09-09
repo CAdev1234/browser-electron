@@ -33,6 +33,8 @@ npm run Start
 - Buttons(Back, Forward, Refresh)
 - Webview
 - Loading Icon
+- TreeSelect (Dashboard/Monitor Page)
+- Pagination (Dashboard/Monitor Page)
 ### Functions
 - Navigation function(back, forward, refresh)
 - Page Navigation
