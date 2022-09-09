@@ -1,0 +1,49 @@
+@import '../../../../styles/variable.scss';
+div.input {
+    width: 100%;
+    display: flex;
+    .prefix-input {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-left: 1em;
+        .prefix-item {
+            position: absolute;
+            top: 50%;
+            left: 0.5em;
+            transform: translate(0, -50%);
+        }
+        input {
+            width: 100%;
+            outline: none;
+            padding: 0.5em 2em;
+            border: none;
+        }
+    }
+}
+
+@keyframes display-ani {
+    from {
+        opacity: 0;
+        display: none;
+        width: 0;
+    }
+    to {
+        opacity: 1;
+        display: flex;
+        width: 100%;
+    }
+}
+
+@keyframes hidden-ani {
+    from {
+        opacity: 1;
+        display: flex;
+        width: 100%;
+    }
+    to {
+        opacity: 0;
+        width: 0;
+    }
+}

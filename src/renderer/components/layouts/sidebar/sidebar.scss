@@ -1,0 +1,85 @@
+@import "../../../styles/variable.scss";
+.sidebar {
+    width: 260px;
+    padding: 1em 0;
+    flex-shrink: 0;
+    background-color: $bg-white;
+    height: 100%;
+    color: $font_color;
+    overflow: auto;
+}
+
+.sidebar-item {
+    padding: .75em 1em;
+    display: block;
+    transition: background-color .15s;
+    border-radius: 5px;
+    &:hover {
+        background-color: $background-color_3;
+        color: $font_hover_color;
+    }
+}
+
+.sidebar-title {
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    span {
+        display: flex;
+        align-items: center;
+        svg {
+            display: inline-block;
+            font-size: 1em;
+            margin-right: 0.5em;
+        }
+    }
+    .toggle-btn {
+        cursor: pointer;
+        transition: transform .3s;
+    }
+}
+
+.sidebar-item.open {
+    color: $font_hover_color;
+    >.sidebar-title {
+        .toggle-btn {
+            transform: rotate(180deg);
+        }
+    }
+    >.sidebar-content {
+        height: auto;
+        padding-top: 1em;
+    }
+}
+
+.sidebar-content {
+    height: 0;
+    overflow: hidden;
+}
+
+.sidebar-item.plain {
+    color: $font_color;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+        background-color: $background-color_3;
+        color: $font_hover_color;
+    }
+    svg {
+        display: inline-block;
+        font-size: 1em;
+        margin-right: 0.5em;
+    }
+}
+
+.sidebar-item.plain.active {
+    color: $font_hover_color;
+}

@@ -1,0 +1,28 @@
+@import "../../../../styles/variable.scss";
+.pagination {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+    button {
+        width: 3em;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $font_color;
+        background-color: $color_white;
+        border: 1px solid $color_gray;
+        cursor: pointer;
+        &:hover:enabled {
+            border-color: $font_hover_color;
+            color: $font_hover_color;
+        }
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+    button.active {
+        color: $font_hover_color;
+        border-color: $font_hover_color;
+    }
+}

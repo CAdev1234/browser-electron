@@ -1,0 +1,19 @@
+button.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.7em;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+button.btn.icon-btn {
+    background: transparent;
+    border: none;
+    svg {
+        color: white;
+    }
+}
